@@ -1,0 +1,267 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Cafe24Moyamoya-Regular-v1.0';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/Cafe24Moyamoya-Regular-v1.0.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cafe24Moyamoya-Regular-v1.0';
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+img{
+    display: block;
+}
+.clearfix::after, .clearfix::before{
+    content: "";
+    display: block;
+    clear: both;
+}
+#wrap{
+    width: 1920px;
+    margin: 0 auto;
+}
+#header{
+    width: 1000px;
+    height: 200px;
+    margin: 0 auto;
+}
+#header .logo{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#header .nav{
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+#header .nav > ul{}
+#header .nav > ul > li{
+    float: left;
+    position: relative;
+}
+#header .nav > ul > li > a{
+    display: block;
+    width: 200px;
+    height: 100px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 100px;
+}
+#header .nav > ul > li > .submenu{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    display: none;
+    z-index: 10;
+}
+#header .nav > ul > li > .submenu > li{}
+#header .nav > ul > li > .submenu > li > a{
+    display: block;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: rgba(255,255,255,0.7);
+}
+
+#banner{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#banner > ul{
+    display: flex;
+    width: 300%;
+    height: 500px;
+    position: relative;
+}
+#banner > ul > li{
+    width: 100%;
+    height: 500px;
+}
+
+#contents{
+    margin: 0 auto;
+    width: 1000px;
+    margin-top: 50px;
+}
+#contents .cont1{
+    width: 100%;
+    height: 360px;
+    box-sizing: border-box;
+}
+#contents .cont1 > .franchise{
+    font-size: 20px;
+    float: left;
+    width: 225px;
+    height: 100%;
+    margin-right: 25px;
+}
+#contents .cont1 > .franchise > img{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+}
+#contents .cont1 > .franchise > span{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 25px;
+}
+#contents .cont1 > .franchise > a{
+    font-size: 15px;
+}
+#contents .cont1 > .menu{
+    font-size: 20px;
+    float: left;
+    width: 500px;
+    height: 100%;
+    margin-right: 25px;  
+}
+#contents .cont1 > .menu > ul{
+    padding-top: 75px;
+}
+#contents .cont1 > .menu > ul > li{
+    float: left;
+}
+#contents .cont1 > .menu > ul > li:nth-of-type(1){
+    padding: 0 30px 0 25px;
+}
+#contents .cont1 > .menu > ul > li:nth-of-type(2){
+    padding: 0 30px 0 0;
+}
+#contents .cont1 > .menu > ul > li:nth-of-type(3){
+    padding: 0 0px 0 0;
+}
+#contents .cont1 > .menu > ul > li > img{}
+#contents .cont1 > .menu > ul > li > div{
+    font-size: 17px;
+    text-align: center;
+}
+#contents .cont1 > .store{
+    font-size: 20px;
+    float: left;
+    width: 225px;
+    height: 100%;
+    padding: 5px 0 0 5;
+}
+#contents .cont1 > .store > img{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+}
+#contents .cont1 > .store > span{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 25px;
+}
+#contents .cont1 > .store > a{
+    font-size: 15px;
+}
+#contents .cont2{
+    margin-top: 50px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+}
+#contents .cont2 > img{
+    margin-right: 50px;
+}
+#contents .cont2 > img:last-child{
+    margin-right: 0;
+}
+#contents .cont3{
+    margin-top: 25px;
+    width: 100%;
+    height: 150px;
+}
+#contents .cont3 .tabmenu{
+    width: 50%;
+    float: left;
+}
+#contents .cont3 .tabmenu > .tabbtn > ul{
+    display: flex;
+}
+#contents .cont3 .tabmenu > .tabcont > .line{
+    border-top: 1px solid black;
+    padding-top: 5px;
+}
+#contents .cont3 .tabmenu > .tabcont > .notice1 > ul > li{
+    padding: 5px 0;
+}
+#contents .cont3 .tabmenu > .tabcont > .notice1 > ul > li > a{
+    width: 70%;
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#contents .cont3 .tabmenu > .tabcont > .notice1 > ul > li > span{
+    float: right;
+}
+#contents .cont3 .tabmenu > .tabcont > .notice2 > ul > li{
+    padding: 5px 0;
+}
+#contents .cont3 .tabmenu > .tabcont > .notice2 > ul > li > a{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 70%;
+    float: left;
+}
+#contents .cont3 .tabmenu > .tabcont > .notice2 > ul > li > span{
+    float: right;
+}
+#contents .cont3 .link{
+    float: right;
+    width: 405px;
+    height: 150px;
+}
+#contents .cont3 .link > .site{
+    float: left;
+}
+#contents .cont3 .link > .site > h3{}
+#contents .cont3 .link > .site > ul{}
+#contents .cont3 .link > .site > ul >li{
+    display: flex;
+    margin-top: 20px;
+}
+#contents .cont3 .link > .site > ul >li > img{
+    margin-right: 10px;
+}
+#contents .cont3 .link > .site > ul >li > img:last-child{
+    margin-right: 0;
+}
+#contents .cont3 .link > .inquiry{
+    float: right;
+}
+
+#footer{
+    width: 1000px;
+    height: 190px;
+    margin: 0 auto;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+#footer > h3{
+    font-size: 23px;
+    padding: 25px 0 64px 0px;
+    letter-spacing: 3px;
+}
+#footer > span{
+    font-size: 14px;
+}
